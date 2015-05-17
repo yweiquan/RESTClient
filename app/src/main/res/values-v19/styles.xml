@@ -1,0 +1,37 @@
+<!-- API 19 theme customizations can go here. -->
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="actionBarTheme">@style/My.ActionBarTheme</item>
+        <item name="actionBarStyle">@style/My.ActionBar</item>
+        <!-- <item name="android:windowTranslucentStatus">true</item> -->
+    </style>
+
+        <style name="My.ActionBarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+            <!-- THIS is where you can color the arrow! -->
+            <item name="colorControlNormal">@color/white</item>
+        </style>
+
+        <style name="My.ActionBar" parent="android:Widget.Holo.Light.ActionBar">
+            <item name="drawerArrowStyle">@style/My.DrawerArrowToggle</item>
+            <!-- THIS is where you can color the ActionBar background! -->
+            <item name="background">@color/material_teal_500</item>
+            <item name="titleTextStyle">@style/My.TitleTextStyle</item>
+        </style>
+
+            <style name="My.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+                <!-- THIS is where you can color the ActionBar background! -->
+                <item name="android:textColor">@color/white</item>
+            </style>
+
+            <style name="My.DrawerArrowToggle" parent="Base.Widget.AppCompat.DrawerArrowToggle">
+                <item name="color">@android:color/white</item>
+            </style>
+
+    <style name="FullBleedTheme" parent="android:Theme.Holo.Light.NoActionBar.TranslucentDecor">
+
+    </style>
+
+</resources>

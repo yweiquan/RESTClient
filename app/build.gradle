@@ -6,10 +6,13 @@ android {
 
     defaultConfig {
         applicationId "me.willyan.restful"
-        minSdkVersion 9
+        minSdkVersion 11
         targetSdkVersion 21
         versionCode 1
         versionName "1.0"
+
+        manifestPlaceholders = [ PROVIDERAUTHORITITES:"me.willyan.restful.bazinga.provider" ]
+        buildConfigField "String", "PROVIDER_AUTHORITY", "\"me.willyan.restful.bazinga.provider\""
     }
     buildTypes {
         release {
