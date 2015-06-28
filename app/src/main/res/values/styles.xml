@@ -14,4 +14,15 @@
             <item name="color">@android:color/white</item>
         </style>
 
+
+    <style name="Theme.Design" parent="Base.Theme.Design">
+    </style>
+
+    <style name="Base.Theme.Design" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/material_teal_500</item>
+        <item name="colorPrimaryDark">@color/material_teal_800</item>
+        <item name="colorAccent">#FF4081</item>
+        <item name="android:windowBackground">@color/window_background</item>
+    </style>
+
 </resources>
