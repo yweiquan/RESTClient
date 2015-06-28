@@ -140,15 +140,6 @@ public class MainActivity extends ActionBarActivity
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            startActivity(new Intent(Intent.ACTION_VIEW,
-                    Uri.parse("migou://m.gou.yangmi.com/CreditsConvert?ticket={}")));
-            return true;
-        }
-
         return super.onOptionsItemSelected(item);
     }
 
