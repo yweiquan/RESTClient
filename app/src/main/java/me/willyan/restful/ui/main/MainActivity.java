@@ -2,6 +2,8 @@ package me.willyan.restful.ui.main;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -142,6 +144,8 @@ public class MainActivity extends ActionBarActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            startActivity(new Intent(Intent.ACTION_VIEW,
+                    Uri.parse("migou://m.gou.yangmi.com/CreditsConvert?ticket={}")));
             return true;
         }
 

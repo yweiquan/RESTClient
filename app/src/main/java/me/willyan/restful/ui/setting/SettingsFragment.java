@@ -1,4 +1,4 @@
-package me.willyan.restful.ui;
+package me.willyan.restful.ui.setting;
 
 import android.os.Bundle;
 import android.preference.Preference;
